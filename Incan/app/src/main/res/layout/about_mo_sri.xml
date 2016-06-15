@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/allview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:visibility="invisible">
+
+        <ScrollView
+            android:id="@+id/swipess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtheading"
+                    android:padding="07dp">
+
+                    <WebView
+                        android:id="@+id/txtdescript"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+
+                        android:background="@color/appbackcolor"
+                        android:scrollbarStyle="insideOverlay" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgsriaur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:background="@drawable/aboutmother" />
+
+                <TextView
+                    android:id="@+id/txtheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgsriaur"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="07dp"
+                    android:textColor="@color/newTxtColor"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
+
+
+
+

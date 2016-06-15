@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbackcolor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="07dp"
+            android:layout_height="match_parent">
+
+            <com.github.ksoichiro.android.observablescrollview.ObservableWebView
+                android:id="@+id/webViewChapter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:scrollbars="vertical"
+                android:layout_alignParentStart="true"
+                android:background="@color/appbackcolor"
+                android:scrollbarStyle="insideOverlay" >
+
+</com.github.ksoichiro.android.observablescrollview.ObservableWebView>
+
+        </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/chapterDesFram"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryDark">
+
+            <TextView
+                android:id="@+id/txtChaptDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:textSize="16sp"
+                android:text="shailesh"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <FrameLayout
+        android:id="@+id/NxtPrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="false"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#66000000"
+            android:divider="@drawable/ic_img_line_v"
+            android:dividerPadding="16dp"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/btnprev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/Prev"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btnnext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/next"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+</RelativeLayout>

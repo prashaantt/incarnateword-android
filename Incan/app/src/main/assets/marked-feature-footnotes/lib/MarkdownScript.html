@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <style type="text/css">
+        @font-face {font-family: "Monotype Sabon";src: url('file:///android_asset/fonts/MonotypeSabon_nn.ttf');}
+        @font-face {font-family: "Monotype Sabon";src: url('file:///android_asset/fonts/Mono_sobo_bold.ttf');font-weight: bold;}
+        @font-face {font-family: "Monotype Sabon";src: url('file:///android_asset/fonts/Monotype_Sabon_Italic.ttf');font-style: italic}
+        @font-face {font-family: "Monotype Sabon";src: url('file:///android_asset/fonts/Monotype_Sabon_Bold_Italic.ttf');font-style: italic;font-weight: bold}
+        @font-face {font-family: "Charlotte";src: url('file:///android_asset/fonts/CharlotteSans_nn.ttf');}
+        @font-face {font-family: "Charlotte";src: url('file:///android_asset/fonts/Charlotte_Sans_Italic.ttf');font-style:italic;}
+        @font-face {font-family: "Charlotte";src: url('file:///android_asset/fonts/Charlotte_Sans.ttf');font-weight: bold;}
+        hr {
+        border-top: none;
+        text-align: center;
+        after {
+        content: *\;\n
+        color: lightgray;
+        position: relative;
+        top: -0.5em;
+        font-size: 1.5em;
+        }
+        }
+        body {font-family:'Monotype Sabon'} h1,h2,h3,h4,h5,h6{font-family: 'Charlotte'}
+    </style>
+    <style type='text/css'>img { max-width: 100%; width: auto; height: auto; }</style>
+</head>
+<body>
+<div id="ChapterContent"></div>
+<script src='file:///android_asset/marked-feature-footnotes/lib/marked.js'></script>
+<script src='file:///android_asset/marked-feature-footnotes/marked.min.js'></script>
+<script language="javascript">
+    function MarkDownContent(msg){
+	    document.getElementById("ChapterContent").innerHTML = marked(msg, {breaks: true, smartypants: true, footnotes: true, gfm: true});
+
+    }
+</script>
+</body>
+</html>
